@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #000;
+        font-family: 'Amatic SC';
+}
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "productos productos productos"
+    "footer footer footer";
+    grid-template-rows: 80px 30px auto auto;
+    grid-template-columns: 25% 50% 25%;
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    grid-area: header;
+ }
+.home{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+.logo{
+    padding: 15px;
+    width: 180px;
+}
+
+.menu{
+    background-color: transparent;
+    grid-area: nav;
+    font-size: 20px;
+}
+.barra{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    margin-top: 20px;
+}
+ul {
+    color: #000;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: transparent;
+    overflow: hidden;
+    text-align: center;  
+}
+ul li{
+    float: left;
+}
+ul li a{
+    color: white;
+    padding: 20px 26px;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    background-color: #222;
+    text-decoration: underline #000;
+}
+.active{
+    background-color: #222;
+}
+.productos{
+    grid-area: productos;
+    background-color: transparent;
+   
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.item{
+    background-color: transparent;
+    height: auto;
+    margin: 20px;
+}
+.item:hover{
+    box-shadow: 10px 10px #222;
+}
+.nosotros{
+    grid-area: productos;
+}
+.textonosotros{
+    display: flex;
+    color: #fff;
+    background-color: transparent;
+    font-size: 30px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+
+}
+.newsletter{
+    grid-area: productos;
+
+}
+.contenedor-form{
+    display: flex;
+    height: 300px;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+}
+.formu{
+    color: #fff;
+    align-self: center;
+    
+    
+}
+.pie{
+    grid-area: footer;
+}
+.footer {
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 648px){
+
+#grilla{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "productos"
+    "footer";
+    grid-template-rows: 1fr 1fr auto auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    grid-area: header;
+}
+.home{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+}
+.menu{
+    grid-area: nav;
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: center;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+.productos{
+    grid-area: productos;
+}
+.galeria{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: flex;
+    flex-direction: column;
+}
+.pie{
+    grid-area: footer;
+}
+}
+

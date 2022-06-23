@@ -7,20 +7,11 @@ body{
         background-color: #000;
         font-family: 'Amatic SC';
 }
-#grilla{
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "productos productos productos"
-    "footer footer footer";
-    grid-template-rows: 80px 30px auto auto;
-    grid-template-columns: 25% 50% 25%;
-    height: 100vh;
-    width: 100%;
+.container{
+    background-color: black;
 }
 .header{
-    grid-area: header;
+
  }
 .home{
     background-color: transparent;
@@ -31,14 +22,11 @@ body{
     padding: 5px;
 }
 .logo{
-    padding: 15px;
-    width: 180px;
+
 }
 
 .menu{
-    background-color: transparent;
-    grid-area: nav;
-    font-size: 20px;
+
 }
 .barra{
     display: flex;
@@ -75,9 +63,7 @@ a:hover{
     background-color: #222;
 }
 .productos{
-    grid-area: productos;
-    background-color: transparent;
-   
+
 }
 .galeria{
     display: flex;
@@ -98,7 +84,7 @@ a:hover{
     border: 5px solid #111;
 }
 .nosotros{
-    grid-area: productos;
+
 }
 .textonosotros{
     display: flex;
@@ -112,24 +98,21 @@ a:hover{
 
 }
 .newsletter{
-    grid-area: productos;
 
 }
 .contenedor-form{
     display: flex;
     height: 300px;
     margin-top: 40px;
-    width: 100%;
     justify-content: center;
 }
 .formu{
     color: #fff;
     align-self: center;
     
-    
 }
 .pie{
-    grid-area: footer;
+
 }
 .footer {
     color: #fff;
@@ -139,57 +122,4 @@ a:hover{
 
 }
 
-@media screen and (max-width: 648px){
-
-#grilla{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "nav"
-    "productos"
-    "footer";
-    grid-template-rows: 1fr 1fr auto auto;
-    grid-template-columns: 1fr;
-    height: 100vh;
-    width: 100%;
-}
-.header{
-    grid-area: header;
-}
-.home{
-    background-color: transparent;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.logo{
-    width: 100px;
-}
-.menu{
-    grid-area: nav;
-}
-.barra{
-    display: flex;
-    flex-direction: row;
-    position: sticky;
-    justify-content: center;
-    padding: 0px;
-    flex-wrap: wrap;
-}
-.productos{
-    grid-area: productos;
-}
-.galeria{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    flex-wrap: flex;
-    flex-direction: column;
-}
-.pie{
-    grid-area: footer;
-}
-}
 

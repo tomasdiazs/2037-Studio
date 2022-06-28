@@ -19,14 +19,17 @@ body{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    padding: 5px;
 }
 .logo{
-
+height: 30vh;
+width: auto;
 }
 
 .menu{
-
+display: flex;
+height: 20vh;
+justify-content: center;
+flex-wrap: wrap;
 }
 
 ul {
@@ -34,14 +37,13 @@ ul {
     list-style-type: none;
     text-decoration: none;
     background-color: transparent;
-    text-align: center;  
 }
 ul li{
-    float: left;
+    align-self: center;
+    justify-self: center;
 }
 ul li a{
     color: white;
-    padding: 20px 26px;
     text-decoration: none;
 }
 a:visited{

@@ -21,7 +21,8 @@ body{
 }
 .logo{
     width: auto;
-    height: 20vh;
+    height: 10vh;
+    padding: 5px;
 }
 .menu{
     display: flex;

@@ -9,12 +9,11 @@ body{
 }
 .container-fluid{
     background-color: black;
-    display: flex;
 }
 .header{
     display: flex;
     justify-content: center;
-
+    height: 10vh;
  }
 .home{
     background-color: transparent;
@@ -51,15 +50,25 @@ body{
     text-decoration: underline #000;
     color: white;
 }
-
-.productos{
-    background-color: transparent;
-}
-.galeria{
+.main{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    height: 60vh;
+    justify-content: center;
+    row-gap: 20px;
+    overflow: auto;
+}
+.productos{
+    display: flex;
+    flex-direction: row;
+}
+.galeria{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 .item{
     background-color: transparent;
@@ -70,32 +79,32 @@ body{
 }
 .nosotros{
     display: flex;
+    height: 60vh;
+    justify-content: center;
 }
 .textonosotros{
     display: flex;
     color: #fff;
     background-color: transparent;
-    height: 300px;
     flex-wrap: wrap;
-    justify-content: center;
-
+    padding: 20px;
 }
 .newsletter{
     display: flex;
+    height: 60vh;
+    justify-content: center;
 }
 .contenedor-form{
-    height: 300px;
     margin-top: 40px;
-    justify-content: center;
+ 
 }
 .formu{
     color: #fff;
-    align-self: center;
-    
 }
 .pie{   
     display: flex;
     justify-content: center;
+    height: 10vh;
 }
 .footer {
     color: #fff;

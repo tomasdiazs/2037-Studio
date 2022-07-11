@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
-        background-color: #000;
-        font-family: 'Amatic SC';
-}
 .container-fluid{
     background-color: $negro2037;
 }
@@ -16,17 +7,7 @@ body{
     justify-content: center;
     height: 10vh;
  }
-.home{
-    background-color: transparent;
-}
-
-.logo{
-    width: auto;
-    height: 10vh;
-    padding: 5px;
-}
-
-.menu{
+ .menu{
     display: flex;
     background-color: $negro2037;
     text-decoration: none;
@@ -35,7 +16,6 @@ body{
     flex-wrap: wrap;
     
 }
-
 .navbar{
     text-decoration: none;
     
@@ -92,7 +72,6 @@ body{
 .itemGaleria:hover{
     box-shadow: 10px 10px #222;
 }
-
 .nosotros{
     display: flex;
     height: 60vh;
@@ -114,11 +93,8 @@ body{
 }
 .contenedor-form{
     margin-top: 40px;
- 
 }
-.formu{
-    color: #fff;
-}
+
 .pie{   
     display: flex;
     justify-content: center;
@@ -130,6 +106,3 @@ body{
     align-self: center;
 
 }
-
-
-
